@@ -6,11 +6,11 @@ var logIt = function () {
 }
 var startTime;
 var data = {
-	'list_name':'Boom Goes the Dynamite',
+	'list_name':'Boom Goes the Dynamite!',
 	'list':[
-		{'key':'key one','value':'value one','count':0},
-		{'key':'key two','value':'value two','count':0},
-		{'key':'key three','value':'value three','count':0},
+		{'key':'key one','value':'value one!','count':0},
+		{'key':'key two','value':'value two!!','count':0},
+		{'key':'key three','value':'value three!!!','count':0},
 		
 	]
 	
