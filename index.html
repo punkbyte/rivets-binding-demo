@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Promises</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <style>
+	  .item_active{background:#f6f4b2;}
+  </style>
+</head>
+
+<body>
+	<div id="tools">
+		<button id="trigger1">Trigger 1</button>
+		<button id="trigger2">Trigger 2</button>
+		<button id="trigger3">Trigger 3</button>
+	</div>
+	<div id="container">
+		
+	</div>
+	<div id="rivet-test" style="border:1px dotted #444;width:600px;min-height:600px;padding:10px;position: absolute;top:10px;right:10px;">
+		<button id="rivets1" rv-on-click="jeff.addItem3">Rivets Add</button>
+		<button id="rivets2" rv-on-click="controller.changeRandom">Rivets Change</button>
+		<h1 rv-html="data.list_name">Hello</h1>
+		<h3 rv-hide="data.list|countList">There Are No Items</h3>
+		<h3 rv-show="data.list|countList">There Are {data.list|getCount} Items</h3>
+		<ul>
+			<li rv-each-l_item='data.list' rv-id='index|setIdName' rv-class-item_active="jeff.getClass"><h3>Key {index|addOne}: <small>{l_item.value}</small><button style="float:right;" rv-on-click="controller.removeItem">Remove</button></h3></li>
+		</ul>
+	
+	</div>
+	
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/rivets.bundled.min.js"></script>
+  <script src="js/core.js"></script>
+</body>
+</html>
